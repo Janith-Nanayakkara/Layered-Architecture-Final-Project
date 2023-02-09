@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="610.0" prefWidth="901.0" style="-fx-background-color: #dff9fb;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.MilkBar.Controller.ViewReportFormController">
+   <children>
+      <ImageView fitHeight="57.0" fitWidth="65.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#ClickOnBackButton" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/icons8-go-back-80.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="139.0" fitWidth="150.0" layoutX="144.0" layoutY="220.0" onMouseClicked="#CustomerOnClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/icons8-purchase-order-96.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="123.0" layoutY="386.0" text="Customer Report">
+         <font>
+            <Font name="Cooper Black" size="23.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="139.0" fitWidth="150.0" layoutX="499.0" layoutY="220.0" onMouseClicked="#ClickOnActionEmployee" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/icons8-report-file-96.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="467.0" layoutY="386.0" text="Employee Report">
+         <font>
+            <Font name="Cooper Black" size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

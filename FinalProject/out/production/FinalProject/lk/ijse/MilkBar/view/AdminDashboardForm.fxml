@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane2" prefHeight="675.0" prefWidth="1182.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.MilkBar.Controller.AdminDashboardFormController">
+   <children>
+      <VBox fx:id="vbox" layoutY="111.0" prefHeight="576.0" prefWidth="285.0" style="-fx-background-color: #3F2B63;">
+         <children>
+            <Button fx:id="customerDTO" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="154.0" mnemonicParsing="false" onAction="#btnCustomerOnAction" prefHeight="76.0" prefWidth="290.0" style="-fx-background-color: #3F2B63;" text="Customer" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="48.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/icons8-customer-64.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#btnEmployeeOnAction" prefHeight="70.0" prefWidth="292.0" style="-fx-background-color: #3F2B63;" text="Employee" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="49.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/icons8-manager-100.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnSupplierOnAction" prefHeight="70.0" prefWidth="286.0" style="-fx-background-color: #3F2B63;" text="Supplier" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="47.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/icons8-supplier-96.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="82.0" mnemonicParsing="false" onAction="#btnOrderOnAction" prefHeight="68.0" prefWidth="285.0" style="-fx-background-color: #3F2B63;" text="Orders" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/place_order.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="410.0" mnemonicParsing="false" onAction="#btnItemOnAction" prefHeight="71.0" prefWidth="296.0" style="-fx-background-color: #3F2B63;" text="Item" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="47.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/icons8-ingredients-80.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="365.0" mnemonicParsing="false" onAction="#btnReportOnAction" prefHeight="71.0" prefWidth="302.0" style="-fx-background-color: #3F2B63;" text="Report" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="48.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/icons8-report-file-96.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="500.0" mnemonicParsing="false" onAction="#btnUserOnAction" prefHeight="76.0" prefWidth="285.0" style="-fx-background-color: #3F2B63;" text=" User" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="44.0">
+                     <image>
+                        <Image url="@../assests/295128.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Pane prefHeight="80.0" prefWidth="285.0" style="-fx-background-color: #3F2B63;">
+               <children>
+                  <ImageView fitHeight="62.0" fitWidth="70.0" layoutX="90.0" onMouseClicked="#onClickLogout" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/1053210.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+      <Pane layoutY="-1.0" prefHeight="112.0" prefWidth="285.0" style="-fx-background-color: #3F2B63;">
+         <children>
+            <Label layoutX="74.0" layoutY="72.0" text="Admin Dasboard" textFill="#fcf8f8">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="108.0" layoutY="2.0" onMouseClicked="#ClickedOnHomePage" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/icons8-home-page-100.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children></Pane>
+      <AnchorPane fx:id="pane" layoutX="285.0" layoutY="60.0" prefHeight="610.0" prefWidth="901.0" style="-fx-background-color: white;">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <children>
+            <ImageView fitHeight="624.0" fitWidth="621.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/milk-bottle-glass_101087-940.jpg" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="553.0" layoutY="175.0" prefHeight="389.0" prefWidth="319.0" style="-fx-background-radius: 30; -fx-background-color: #dfe6e9;">
+               <children>
+                  <TextArea prefHeight="399.0" prefWidth="319.0" style="-fx-border-radius: 20;" text=" Milk Bar is a cosy&#10; space for you to enjoy&#10; the best quality Milk &#10;and Milk Product.  &#10;makes the freshmilk &#10;every morning until &#10;11am so there are &#10;fresh, every-changing&#10; flavours to sample. ">
+                     <font>
+                        <Font name="Bodoni MT Black" size="26.0" />
+                     </font>
+                  </TextArea>
+               </children></AnchorPane>
+         </children></AnchorPane>
+      <AnchorPane layoutX="285.0" prefHeight="62.0" prefWidth="901.0" style="-fx-background-color: #a29bfe;">
+         <children>
+            <Label layoutX="372.0" layoutY="12.0" prefHeight="21.0" prefWidth="178.0" text="Milk Bar">
+               <font>
+                  <Font name="Berlin Sans FB" size="36.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+</AnchorPane>

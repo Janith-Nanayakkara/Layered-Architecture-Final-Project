@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="610.0" prefWidth="901.0" style="-fx-background-color: #dff9fb;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.MilkBar.Controller.SupplierFormController">
+    <children>
+        <JFXButton fx:id="btnSave" buttonType="RAISED" layoutX="650.0" layoutY="254.0" onAction="#btnAddOnAction" prefHeight="37.0" prefWidth="114.0" style="-fx-background-color: #3498db;" text="SAVE" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </JFXButton>
+        <TextField fx:id="txtId" layoutX="80.0" layoutY="107.0" prefHeight="33.0" prefWidth="310.0" promptText="Supplier Id*" />
+        <TextField fx:id="txtName" layoutX="487.0" layoutY="107.0" prefHeight="33.0" prefWidth="310.0" promptText="Supplier Name*" />
+        <TextField fx:id="txtContact" layoutX="81.0" layoutY="178.0" prefHeight="33.0" prefWidth="310.0" promptText="Contact*" />
+        <TextField fx:id="txtEmail" layoutX="488.0" layoutY="178.0" prefHeight="33.0" prefWidth="310.0" promptText="Email*" />
+        <Label layoutX="80.0" layoutY="82.0" opacity="0.74" text=" Id*">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+        <Label layoutX="487.0" layoutY="82.0" opacity="0.74" text="Name*">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+        <Label layoutX="81.0" layoutY="153.0" opacity="0.74" text="Contact*">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+        <Label layoutX="488.0" layoutY="153.0" opacity="0.74" text="Email*">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+        <JFXTabPane layoutX="160.0" layoutY="367.0" />
+        <TableView fx:id="tblSupplier" layoutX="71.0" layoutY="345.0" prefHeight="245.0" prefWidth="776.0">
+            <columns>
+                <TableColumn fx:id="colID" prefWidth="118.0" text="ID" />
+                <TableColumn fx:id="colName" minWidth="0.0" prefWidth="183.0" text="Name" />
+                <TableColumn fx:id="colContact" minWidth="0.0" prefWidth="153.0" text="Contact" />
+                <TableColumn fx:id="colEmail" prefWidth="186.0" text="Email" />
+            <TableColumn fx:id="colCompany" prefWidth="135.0" text="Company" />
+          
+            </columns>
+        </TableView>
+        <JFXButton fx:id="btnDelete" buttonType="RAISED" layoutX="516.0" layoutY="254.0" onAction="#btnDeleteOnAction" prefHeight="37.0" prefWidth="97.0" style="-fx-background-color: #e74c3c;" text="Delete" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </JFXButton>
+      <ImageView fitHeight="48.0" fitWidth="46.0" layoutX="29.0" layoutY="14.0" onMouseClicked="#onClickBackButton" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/icons8-go-back-80.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <TextField fx:id="txtCompany" layoutX="81.0" layoutY="264.0" prefHeight="33.0" prefWidth="310.0" promptText="Company*" />
+      <Label layoutX="81.0" layoutY="239.0" opacity="0.74" text="Company*">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <ImageView fitHeight="77.0" fitWidth="86.0" layoutX="400.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/icons8-supplier-96.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="newAddSupplier" layoutX="581.0" layoutY="29.0" mnemonicParsing="false" onAction="#btnNewAddOnAction" prefHeight="31.0" prefWidth="219.0" text="New Supplier" />
+    </children>
+</AnchorPane>
