@@ -81,13 +81,13 @@ public class PlaceOrderBOImpl implements PlaceOrderBO {
         try {
             connection = DBConnection.getDbConnection().getConnection();
             boolean b1 = orderDAO.exist(dto.getOrderId());
-            /*if order id already exist*/
+
             if (b1) {
                 return false;
             }
 
             connection.setAutoCommit(false);
-            //Save the Order to the order table
+
             boolean b2 = orderDAO.save(new Order(dto.getOrderId(), dto.getOrderDate(), dto.getCustomerId()));
             if (!b2) {
                 connection.rollback();
@@ -103,11 +103,11 @@ public class PlaceOrderBOImpl implements PlaceOrderBO {
                     connection.setAutoCommit(true);
                     return false;
                 }
-                //Search & Update Item
+
                 ItemDTO item = findItem(d.getItemCode());
                 item.setQtyOnHand(item.getQtyOnHand() - d.getQty());
 
-                //update item
+
                 boolean b = itemDAO.update(new Item(item.getCode(), item.getName(), item.getQtyOnHand(),item.getUnitPrice()));
 
                 if (!b) {

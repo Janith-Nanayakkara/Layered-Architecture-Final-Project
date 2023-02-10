@@ -63,13 +63,4 @@ public class UserDAOImpl implements UserDAO {
     public String generateNewID() throws SQLException, ClassNotFoundException {
         return null;
     }
-    public ResultSet getAllRole() throws SQLException, ClassNotFoundException {
-      /*  ResultSet resultSet= CrudUtil.execute("SELECT user_role FROM Users");
-      ArrayList<User> users= new ArrayList<>();
-        while (resultSet.next()){
-        users.add(new User(resultSet.getString(1)));
-        }
-        return users;*/return null;
-
-    }
 }

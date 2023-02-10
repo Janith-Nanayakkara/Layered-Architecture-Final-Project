@@ -6,6 +6,7 @@ public class DAOFactory {
     private static DAOFactory daoFactory;
 
     private DAOFactory() {
+
     }
 
     public static DAOFactory getDaoFactory() {

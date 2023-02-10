@@ -1,6 +1,6 @@
 package lk.ijse.MilkBar.dao.custom.impl;
 
-import javafx.collections.ObservableList;
+
 import lk.ijse.MilkBar.dao.custom.ItemDAO;
 import lk.ijse.MilkBar.dto.ItemDTO;
 import lk.ijse.MilkBar.entity.Item;

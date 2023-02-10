@@ -1,13 +1,11 @@
 package lk.ijse.MilkBar.dao.custom.impl;
 
-import javafx.collections.ObservableList;
+
 import lk.ijse.MilkBar.dao.custom.OrderDAO;
-import lk.ijse.MilkBar.db.DBConnection;
-import lk.ijse.MilkBar.dto.OrderDTO;
+
 import lk.ijse.MilkBar.entity.Order;
 import lk.ijse.MilkBar.util.CrudUtil;
 
-import java.sql.Connection;
 import java.sql.Date;
 import java.sql.ResultSet;
 import java.sql.SQLException;

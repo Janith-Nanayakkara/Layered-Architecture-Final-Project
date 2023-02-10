@@ -6,9 +6,7 @@ import lk.ijse.MilkBar.dao.DAOTypes;
 import lk.ijse.MilkBar.dao.custom.UserDAO;
 import lk.ijse.MilkBar.dto.UserDTO;
 import lk.ijse.MilkBar.entity.User;
-import lk.ijse.MilkBar.util.CrudUtil;
 
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
@@ -50,8 +48,5 @@ public class UserBOImpl implements UserBO {
     @Override
     public String generateNewID() throws SQLException, ClassNotFoundException {
        return userDAO.generateNewID();
-    }
-    public  ResultSet getAllRole() throws SQLException, ClassNotFoundException {
-        return  null;
     }
 }

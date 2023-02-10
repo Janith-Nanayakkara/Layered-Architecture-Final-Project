@@ -5,15 +5,14 @@ import lk.ijse.MilkBar.bo.custom.impl.*;
 
 public class BOFactory {
     private static BOFactory boFactory;
+
     private BOFactory(){
+
     }
     public static BOFactory getBoFactory(){
         return (boFactory==null)? boFactory=new BOFactory() : boFactory;
     }
 
-
-
-    //Object creation logic for BO objects
     public SuperBO getBO(BOType types){
         switch (types){
             case CUSTOMER:
@@ -32,5 +31,4 @@ public class BOFactory {
                 return null;
         }
     }
-
 }
