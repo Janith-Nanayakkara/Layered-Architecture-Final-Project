@@ -25,7 +25,6 @@ public class ViewReportFormController {
             JasperReport jasperReport = JasperCompileManager.compileReport(resource);
             JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport,null, DBConnection.getDbConnection().getConnection());
 
-            //                  JasperPrintManager.printReport(jasperPrint,true);
 
             JasperViewer.viewReport(jasperPrint, false);
 

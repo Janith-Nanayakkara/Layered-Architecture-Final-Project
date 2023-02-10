@@ -184,19 +184,7 @@ public class ItemFormController {
         return tempCustomersList.get(tempCustomersList.size() - 1).getCode();
     }
 
-    public void lblSearchOnAction(KeyEvent keyEvent) {
-        String code = txtSearch.getText();
 
-        try {
-            ItemDTO itemDTO = itemBO.searchItem(code);
-            if(itemDTO != null) {
-                fillData(itemDTO);
-                txtSearch.clear();
-            }
-        } catch (SQLException | ClassNotFoundException e) {
-            throw new RuntimeException(e);
-        }
-    }
     public void btnBackOnClickAction(MouseEvent mouseEvent) throws IOException {
         Navigation.navigate(Routes.HOME,pane);
     }
@@ -213,12 +201,6 @@ public class ItemFormController {
         } catch (ClassNotFoundException e) {
             new Alert(Alert.AlertType.ERROR, e.getMessage()).show();
         }
-    }
-    private void fillData(ItemDTO itemDTO) {
-        txtItemCode.setText(itemDTO.getCode());
-        txtItemName.setText(itemDTO.getName());
-        txtUnitPrice.setText(String.valueOf(itemDTO.getUnitPrice()));
-        txtQtyOnHand.setText(String.valueOf(itemDTO.getQtyOnHand()));
     }
 
     private void emptyTextField() {
