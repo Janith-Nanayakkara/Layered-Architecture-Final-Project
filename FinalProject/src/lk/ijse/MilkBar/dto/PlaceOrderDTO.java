@@ -2,7 +2,7 @@ package lk.ijse.MilkBar.dto;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
-import java.util.ArrayList;
+
 
 public class PlaceOrderDTO implements Serializable {
     private String oid;

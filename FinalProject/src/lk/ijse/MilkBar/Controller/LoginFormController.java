@@ -27,9 +27,9 @@ public class LoginFormController {
 
 
     public void btnUserLoginOnAction(ActionEvent actionEvent) throws IOException, SQLException, ClassNotFoundException {
-       /* String userName = txtUsername.getText();
+        String userName = txtUsername.getText();
         String password = txtPassword.getText();
-
+/*
         String sql = "SELECT * FROM users WHERE username = ? and user_password = ? ";
         ResultSet result = CrudUtil.execute(sql, userName, password);
 
