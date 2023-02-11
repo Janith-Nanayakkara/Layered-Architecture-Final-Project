@@ -82,5 +82,10 @@
       <TextField fx:id="txtName" layoutX="495.0" layoutY="137.0" onKeyReleased="#name" prefHeight="31.0" prefWidth="310.0" promptText="*name" />
       <TextField fx:id="txtAddress" layoutX="127.0" layoutY="207.0" onKeyReleased="#address" prefHeight="31.0" prefWidth="299.0" promptText="*address" />
       <TextField fx:id="txtTelNumber" layoutX="489.0" layoutY="207.0" onKeyReleased="#contact" prefHeight="31.0" prefWidth="310.0" promptText="*contact" />
+      <ImageView fitHeight="31.0" fitWidth="34.0" layoutX="659.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/create.png" />
+         </image>
+      </ImageView>
     </children>
 </AnchorPane>

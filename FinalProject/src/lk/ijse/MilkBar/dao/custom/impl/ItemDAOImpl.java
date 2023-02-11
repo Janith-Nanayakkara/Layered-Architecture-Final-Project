@@ -62,50 +62,7 @@ public class ItemDAOImpl implements ItemDAO {
         }
         return null;
     }
-    @Override
-    public boolean updateQty(Item itemDTO) throws SQLException, ClassNotFoundException {
-        String sql = "UPDATE Item SET qtyOnHand = qtyOnHand - ? WHERE code = ?";
-        return CrudUtil.execute(sql, itemDTO.getQtyOnHand(), itemDTO.getCode());
-    }
-    @Override
-    public ArrayList<String> loadItemCodes() throws SQLException, ClassNotFoundException {
-        String sql = "SELECT code FROM Item";
-        ResultSet result = CrudUtil.execute(sql);
 
-        ArrayList<String> codeList = new ArrayList<>();
-
-        while (result.next()) {
-            codeList.add(result.getString(1));
-        }
-        return codeList;
-    }
-    @Override
-    public ResultSet getDetails(String valueOf) throws SQLException, ClassNotFoundException {
-        return CrudUtil.execute("SELECT * FROM item WHERE item_code=?", valueOf);
-
-    }
-    @Override
-    public ArrayList<ItemDTO> getAllIds() throws SQLException, ClassNotFoundException {
-        ResultSet resultSet= CrudUtil.execute("SELECT item_code FROM item");
-        ArrayList<ItemDTO> items=new ArrayList<>();
-        while (resultSet.next()){
-            items.add(
-                    new ItemDTO(
-                            resultSet.getString(1)
-                    ));
-        }
-
-        return items;
-
-    }
-    @Override
-    public String getLastId() throws SQLException, ClassNotFoundException {
-        ResultSet resultSet=CrudUtil.execute("SELECT order_id FROM orders ORDER BY order_id DESC LIMIT 1");
-        if (resultSet.next() ) {
-            return resultSet.getString(1);
-        }
-        return null;
-    }
 
     @Override
     public String generateNewID() throws SQLException, ClassNotFoundException {
