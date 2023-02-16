@@ -8,8 +8,6 @@ private String name;
 
 private int qtyOnHand;
 private double unitPrice;
-
-
     public ItemTM(String code, String name, int qtyOnHand, double unitPrice) {
         this.code = code;
         this.name = name;
